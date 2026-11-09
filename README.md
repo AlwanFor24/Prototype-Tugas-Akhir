@@ -1,4 +1,4 @@
-# Streamlit Prototype: Heuristic-Guided MCTS for JSSP
+# Streamlit Prototype: Heuristic Dispatching Rule MCTS for JSSP
 
 A prototype for running MCTS (baseline), MCTS + EDD, and MCTS + LDD on user-uploaded JSSP benchmark instances.
 
