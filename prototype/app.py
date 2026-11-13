@@ -46,7 +46,7 @@ st.sidebar.header("1. Dataset")
 
 st.sidebar.markdown(
     'Upload file instance (.txt), '
-    '<a href="https://github.com/AlwanFor24/Prototype-Tugas-Akhir/tree/main/taillard" target="_blank">Nama Link</a>',
+    '<a href="https://github.com/AlwanFor24/Prototype-Tugas-Akhir/tree/main/taillard" target="_blank">Example : Taillard Format</a>',
     unsafe_allow_html=True
 )
 
@@ -54,7 +54,7 @@ fmt = "auto"
 text, name = None, None
 
 up = st.sidebar.file_uploader(
-    "Pilih file dataset", type=["txt"]
+    "Choose file", type=["txt"]
 )
 
 if up is not None:
