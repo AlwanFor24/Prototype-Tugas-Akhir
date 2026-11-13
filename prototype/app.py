@@ -43,11 +43,20 @@ st.divider()
 # 1. Input dataset
 # ---------------------------------------------------------------------------
 st.sidebar.header("1. Dataset")
-fmt = "auto"  # format Taillard / OR-Library dideteksi otomatis
-text, name = None, None
-up = st.sidebar.file_uploader(
-    "Upload file instance (.txt)", type=["txt"],
+
+st.sidebar.markdown(
+    'Upload file instance (.txt), '
+    '<a href="https://github.com/AlwanFor24/Prototype-Tugas-Akhir/tree/main/taillard" target="_blank">Nama Link</a>',
+    unsafe_allow_html=True
 )
+
+fmt = "auto"
+text, name = None, None
+
+up = st.sidebar.file_uploader(
+    "Pilih file dataset", type=["txt"]
+)
+
 if up is not None:
     text, name = up.getvalue().decode("utf-8", errors="ignore"), up.name
 
